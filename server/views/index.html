@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legendary Waffle</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h3>Sign up</h3>
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            aria-placeholder="Name"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            aria-placeholder="Email"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            aria-placeholder="Password"
+          />
+        </div>
+        <button id="signup">Sign Up</button>
+      </form>
+    </div>
+    <div>
+      <form method="GET" action="/login">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script>
+      var name = document.querySelector("input[name='name']");
+      var email = document.querySelector("input[name='email']");
+      var password = document.querySelector("input[name='password']");
+    </script>
+  </body>
+</html>

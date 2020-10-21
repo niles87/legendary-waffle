@@ -11,3 +11,5 @@ EndUser.init(
   },
   { sequelize }
 );
+
+module.exports = EndUser;
