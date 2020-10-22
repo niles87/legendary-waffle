@@ -1,5 +1,5 @@
 const express = require("express");
-// const sequelize = require("./config/db.config");
+const sequelize = require("./config/db.config");
 const session = require("express-session");
 const { ExpressOIDC } = require("@okta/oidc-middleware");
 const path = require("path");
@@ -35,6 +35,6 @@ const oidc = new ExpressOIDC({
 app.use(oidc.router);
 app.use(routes);
 
-// sequelize.sync({ force: false }).then(() => {
-app.listen(PORT, () => console.log(`app listening on port: ${PORT}`));
-// });
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log(`app listening on port: ${PORT}`));
+});

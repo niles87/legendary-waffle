@@ -6,8 +6,9 @@
     <title>Legendary Waffle</title>
   </head>
   <body>
+    <nav><a href="/login">login</a> | <a href="/logout">logout</a></nav>
     <div>
-      <form>
+      <form id="register">
         <h3>Sign up</h3>
         <div>
           <input
@@ -33,18 +34,9 @@
             aria-placeholder="Password"
           />
         </div>
-        <button id="signup">Sign Up</button>
+        <button id="signup" type="submit">Sign Up</button>
       </form>
     </div>
-    <div>
-      <form method="GET" action="/login">
-        <button type="submit">Login</button>
-      </form>
-    </div>
-    <script>
-      var name = document.querySelector("input[name='name']");
-      var email = document.querySelector("input[name='email']");
-      var password = document.querySelector("input[name='password']");
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

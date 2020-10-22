@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.7"
 services:
   db:
     image: postgres:alpine
@@ -8,7 +8,9 @@ services:
     ports:
       - "5432:5432"
   web:
-    image: services-api
+    image: services-api:latest
+    restart: always
+
     depends_on:
       - db
     ports:
